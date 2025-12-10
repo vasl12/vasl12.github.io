@@ -157,97 +157,6 @@
   </td>
 </tr>
 
-<tr onmouseout="multicontrast_stop()" onmouseover="multicontrast_start()" bgcolor="#ffffd0">
-  <td style="padding:20px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='multicontrast_image'>
-        <img src='images/multicontrast_after.png' width=100%>
-      </div>
-      <img src='images/multicontrast_after.png' width=100%>
-    </div>
-    <script type="text/javascript">
-      function multicontrast_start() {
-        document.getElementById('multicontrast_image').style.opacity = "1";
-      }
-
-      function multicontrast_stop() {
-        document.getElementById('multicontrast_image').style.opacity = "0";
-      }
-      multicontrast_stop()
-    </script>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://conferences.miccai.org/2023/papers/604-Paper1199.html">
-      <span class="papertitle">Single-subject Multi-contrast MRI Super-resolution via Implicit Neural Representations</span>
-    </a>
-    <br>
-    <strong>Julian McGinnis*</strong>
-    <a href="https://www.dqbm.uzh.ch/en/research/menze/team/team-supro.html">Suprosanna Shit*</a>,
-    <a href="https://hongweilibran.github.io/">Hongwei Bran Li</a>,
-    <a href="https://kiinformatik.mri.tum.de/en/team/vasiliki_sideri-lampretsa">Vasiliki Sideri-Lampretsa</a>,
-    <a href="https://kiinformatik.mri.tum.de/en/team/robert_graf">Robert Graf</a>,
-    <a href="https://kiinformatik.mri.tum.de/en/team/maik_dannecker">Maik Dannecker</a>,
-    <a href="https://jiazhenpan.me/">Jiazhen Pan</a>,
-    <a href="https://kiinformatik.mri.tum.de/en/team/nil_stolt-anso">Nil Stolt Ansó</a>,
-    <a href="https://neurologie.mri.tum.de/de/team/mark_muehlau">Mark Mühlau</a>,
-    <a href="https://www.professoren.tum.de/en/kirschke-jan">Jan S. Kirschke</a>,
-    <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>,
-    <a href="https://www.professoren.tum.de/en/wiestler-benedikt">Benedikt Wiestler</a>
-    <br>
-    <em>MICCAI</em>, 2023
-    <br>
-    <a href="https://github.com/jqmcginnis/multi_contrast_inr">code</a>
-    /
-    <a href="https://arxiv.org/abs/2303.15065">paper</a>
-    <p></p>
-    <p>
-      By modeling complementary MRI contrasts in a shared anatomical space with INRs, we are able to super-resolve MRI scans using single subject data alone.
-    </p>
-  </td>
-</tr>
-
-
-<tr onmouseout="nisf_stop()" onmouseover="nisf_start()">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='nisf_image'>
-        <img src='images/nisf_before.png' width=100%>
-      </div>
-      <img src='images/nisf_before.png' width=100%>
-    </div>
-    <script type="text/javascript">
-      function nisf_start() {
-        document.getElementById('nisf_image').style.opacity = "1";
-      }
-
-      function nisf_stop() {
-        document.getElementById('nisf_image').style.opacity = "0";
-      }
-      nisf_stop()
-    </script>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://arxiv.org/abs/2309.08643">
-      <span class="papertitle">NISF: Neural Implicit Segmentation Functions</span>
-    </a>
-    <br>
-    <a href="https://kiinformatik.mri.tum.de/en/team/nil_stolt-anso">Nil Stolt-Ansó</a>,
-    <strong>Julian McGinnis</strong>,
-    <a href="https://jiazhenpan.me/">Jiazhen Pan</a>,
-    <a href="https://kiinformatik.mri.tum.de/de/team/kerstin_hammernik">Kerstin Hammernik</a>,
-    <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>
-    <br>
-    <em>MICCAI</em>, 2023
-    <br>
-    <a href="https://github.com/niloide/implicit_segmentation">code</a>
-    /
-    <a href="https://arxiv.org/abs/2309.08643">paper</a>
-    <p></p>
-    <p>
-      We propose a novel family of segmentation models that learn a mapping from a real-valued coordinate space to a shape representation, enabling the segmentation of anatomical shapes in high-dimensional continuous spaces even with sparse or partial data.
-    </p>
-  </td>
-</tr>
 
 
 <tr onmouseout="sinr_stop()" onmouseover="sinr_start()" bgcolor="#ffffd0">
@@ -351,6 +260,99 @@
     </p>
   </td>
 </tr>
+
+<tr onmouseout="multicontrast_stop()" onmouseover="multicontrast_start()" bgcolor="#ffffd0">
+  <td style="padding:20px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='multicontrast_image'>
+        <img src='images/multicontrast_after.png' width=100%>
+      </div>
+      <img src='images/multicontrast_after.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function multicontrast_start() {
+        document.getElementById('multicontrast_image').style.opacity = "1";
+      }
+
+      function multicontrast_stop() {
+        document.getElementById('multicontrast_image').style.opacity = "0";
+      }
+      multicontrast_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://conferences.miccai.org/2023/papers/604-Paper1199.html">
+      <span class="papertitle">Single-subject Multi-contrast MRI Super-resolution via Implicit Neural Representations</span>
+    </a>
+    <br>
+    <strong>Julian McGinnis*</strong>
+    <a href="https://www.dqbm.uzh.ch/en/research/menze/team/team-supro.html">Suprosanna Shit*</a>,
+    <a href="https://hongweilibran.github.io/">Hongwei Bran Li</a>,
+    <a href="https://kiinformatik.mri.tum.de/en/team/vasiliki_sideri-lampretsa">Vasiliki Sideri-Lampretsa</a>,
+    <a href="https://kiinformatik.mri.tum.de/en/team/robert_graf">Robert Graf</a>,
+    <a href="https://kiinformatik.mri.tum.de/en/team/maik_dannecker">Maik Dannecker</a>,
+    <a href="https://jiazhenpan.me/">Jiazhen Pan</a>,
+    <a href="https://kiinformatik.mri.tum.de/en/team/nil_stolt-anso">Nil Stolt Ansó</a>,
+    <a href="https://neurologie.mri.tum.de/de/team/mark_muehlau">Mark Mühlau</a>,
+    <a href="https://www.professoren.tum.de/en/kirschke-jan">Jan S. Kirschke</a>,
+    <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>,
+    <a href="https://www.professoren.tum.de/en/wiestler-benedikt">Benedikt Wiestler</a>
+    <br>
+    <em>MICCAI</em>, 2023
+    <br>
+    <a href="https://github.com/jqmcginnis/multi_contrast_inr">code</a>
+    /
+    <a href="https://arxiv.org/abs/2303.15065">paper</a>
+    <p></p>
+    <p>
+      By modeling complementary MRI contrasts in a shared anatomical space with INRs, we are able to super-resolve MRI scans using single subject data alone.
+    </p>
+  </td>
+</tr>
+
+
+<tr onmouseout="nisf_stop()" onmouseover="nisf_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='nisf_image'>
+        <img src='images/nisf_before.png' width=100%>
+      </div>
+      <img src='images/nisf_before.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function nisf_start() {
+        document.getElementById('nisf_image').style.opacity = "1";
+      }
+
+      function nisf_stop() {
+        document.getElementById('nisf_image').style.opacity = "0";
+      }
+      nisf_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2309.08643">
+      <span class="papertitle">NISF: Neural Implicit Segmentation Functions</span>
+    </a>
+    <br>
+    <a href="https://kiinformatik.mri.tum.de/en/team/nil_stolt-anso">Nil Stolt-Ansó</a>,
+    <strong>Julian McGinnis</strong>,
+    <a href="https://jiazhenpan.me/">Jiazhen Pan</a>,
+    <a href="https://kiinformatik.mri.tum.de/de/team/kerstin_hammernik">Kerstin Hammernik</a>,
+    <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>
+    <br>
+    <em>MICCAI</em>, 2023
+    <br>
+    <a href="https://github.com/niloide/implicit_segmentation">code</a>
+    /
+    <a href="https://arxiv.org/abs/2309.08643">paper</a>
+    <p></p>
+    <p>
+      We propose a novel family of segmentation models that learn a mapping from a real-valued coordinate space to a shape representation, enabling the segmentation of anatomical shapes in high-dimensional continuous spaces even with sparse or partial data.
+    </p>
+  </td>
+</tr>
+
 
 
 <tr onmouseout="vessel_stop()" onmouseover="vessel_start()">
