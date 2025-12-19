@@ -55,6 +55,56 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+<tr onmouseout="muon_stop()" onmouseover="muon_start()" bgcolor="#ffffd0">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='muon_image'>
+        <img src='images/muon_muon.png' width=100%>
+      </div>
+      <img src='images/muon_adam.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function muon_start() {
+        document.getElementById('muon_image').style.opacity = "1";
+      }
+
+      function muon_stop() {
+        document.getElementById('muon_image').style.opacity = "0";
+      }
+      muon_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://muon-inrs.github.io/">
+      <span class="papertitle">Optimizing Rank for High-Fidelity Implicit Neural Representations</span>
+    </a>
+    <br>
+    <strong>Julian McGinnis</strong>,
+    <a href="#">Florian Hölzl</a>,
+    <a href="#">Suprosanna Shit</a>,
+    <a href="#">Florentin Bieder</a>,
+    <a href="#">Paul Friedrich</a>,
+    <a href="#">Mark Mühlau</a>,
+    <a href="#">Björn Menze</a>,
+    <a href="#">Daniel Rueckert</a>,
+    <a href="#">Benedikt Wiestler</a>
+    <br>
+    <em>Preprint</em>, 2025
+    <br>
+    <a href="https://muon-inrs.github.io/">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2512.14366">arXiv</a>
+    /
+    <a href="https://github.com/jqmcginnis/muon-inrs">code</a>
+    /
+    <a href="https://drive.google.com/file/d/1g918SrErj66Sktx5j6ypQr2dNKB5gS7b/view?usp=sharing">colab</a>
+    <p></p>
+    <p>
+      We challenge the notion that the low-frequency bias of vanilla MLPs is an architectural limitation, but rather a symptom of stable rank degradation. By using the Muon optimizer to enforce orthogonal updates, we achieve state-of-the-art high-frequency reconstruction with up to 9 dB PSNR improvements.
+    </p>
+  </td>
+</tr>
+			  
 <tr onmouseout="medfuncta_stop()" onmouseover="medfuncta_start()" bgcolor="#ffffd0">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
