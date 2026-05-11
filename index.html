@@ -108,7 +108,49 @@
 </tr>
 -->
 
-<!--
+
+<tr onmouseout="sae_stop()" onmouseover="sae_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='sae_image'>
+        <img src='images/sae.png' width=100%>
+      </div>
+      <img src='images/sae.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function sae_start() {
+        document.getElementById('sae_image').style.opacity = "1";
+      }
+
+      function sae_stop() {
+        document.getElementById('sae_image').style.opacity = "0";
+      }
+      sae_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2603.23794">
+      <span class="papertitle">Sparse Autoencoders for Interpretable Medical Image Representation Learning</span>
+    </a>
+    <br>
+    <a href="https://med.stanford.edu/profiles/philipp-wesp">Philipp Wesp</a>,
+    <a href="#">Robbie Holland</a>,
+    <strong>Vasiliki Sideri-Lampretsa</strong>,
+    <a href="https://med.stanford.edu/profiles/sergios-gatidis">Sergios Gatidis</a>
+    <br>
+    <em>Preprint</em>, 2026
+    <br>
+    <a href="https://arxiv.org/abs/2603.23794">arXiv</a>
+    /
+    <a href="https://github.com/pwesp/sail">code</a>
+    <p></p>
+    <p>
+      We propose using sparse autoencoders to learn interpretable representations of medical images, enabling structured and human-understandable feature discovery in clinical imaging data.
+    </p>
+  </td>
+</tr>
+
+
 <tr onmouseout="iclr26_stop()" onmouseover="iclr26_start()">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
@@ -133,12 +175,12 @@
       <span class="papertitle">Beyond Uniformity: Regularizing Implicit Neural Representations through a Lipschitz Lens</span>
     </a>
     <br>
-    <strong>Julian McGinnis*</strong>,
+    <a href="https://jqmcginnis.github.io/">Julian McGinnis*</a>,
     <a href="https://www.dqbm.uzh.ch/en/research/menze/team/team-supro.html">Suprosanna Shit*</a>,
     <a href="#">Florian A. Hölzl</a>,
     <a href="#">Paul Friedrich</a>,
     <a href="#">Paul Büschl</a>,
-    <a href="https://kiinformatik.mri.tum.de/en/team/vasiliki_sideri-lampretsa">Vasiliki Sideri‑Lampretsa</a>,
+    <strong>Vasiliki Sideri‑Lampretsa</strong>,
     <a href="https://neurologie.mri.tum.de/de/team/mark_muehlau">Mark Mühlau</a>,
     <a href="#">Philippe C. Cattin</a>,
     <a href="https://www.dqbm.uzh.ch/en/research/menze.html">Bjoern Menze</a>,
@@ -158,8 +200,137 @@
     </p>
   </td>
 </tr>
--->			  
-			  
+
+<tr onmouseout="diffdef_stop()" onmouseover="diffdef_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='diffdef_image'>
+        <img src='images/diffdef.png' width=100%>
+      </div>
+      <img src='images/diffdef.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function diffdef_start() {
+        document.getElementById('diffdef_image').style.opacity = "1";
+      }
+
+      function diffdef_stop() {
+        document.getElementById('diffdef_image').style.opacity = "0";
+      }
+      diffdef_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://ieeexplore.ieee.org/abstract/document/11108960/">
+      <span class="papertitle">Diff-Def: Diffusion-Generated Deformation Fields for Conditional Atlases</span>
+    </a>
+    <br>
+    <a href="#">Sophie Starck*</a>,
+    <strong>Vasiliki Sideri-Lampretsa*</strong>,
+    <a href="https://bernhard-kainz.com/">Bernhard Kainz</a>,
+    <a href="https://martinmenten.github.io/">Martin J. Menten</a>,
+    <a href="https://kiinformatik.mri.tum.de/de/team/tamara_mueller">Tamara T. Mueller</a>,
+    <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>
+    <br>
+    <em>IEEE Transactions on Medical Imaging</em>, 2025
+    <br>
+    <a href="https://ieeexplore.ieee.org/abstract/document/11108960/">paper</a>
+    <p></p>
+    <p>
+      We leverage diffusion models to generate deformation fields for building conditional atlases, enabling flexible and high-quality anatomical atlas construction conditioned on subject-specific attributes.
+    </p>
+  </td>
+</tr>
+
+
+<tr onmouseout="sinr_stop()" onmouseover="sinr_start()" bgcolor="#ffffd0">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='sinr_image'>
+        <img src='images/sinr_before.png' width=100%>
+      </div>
+      <img src='images/sinr_before.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function sinr_start() {
+        document.getElementById('sinr_image').style.opacity = "1";
+      }
+
+      function sinr_stop() {
+        document.getElementById('sinr_image').style.opacity = "0";
+      }
+      sinr_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://proceedings.mlr.press/v250/sideri-lampretsa24a.html">
+      <span class="papertitle">SINR: Spline-enhanced implicit neural representation for multi-modal registration</span>
+    </a>
+    <br>
+    <strong>Vasiliki Sideri-Lampretsa</strong>,
+    <a href="https://jqmcginnis.github.io/">Julian McGinnis</a>,
+    <a href="https://kiinformatik.mri.tum.de/en/team/huaqi-harvey_qiu">Huaqi Qiu</a>,
+    <a href="https://magdapaschali.com/">Magdalini Paschali</a>,
+    <a href="https://waltersimson.com/">Walter Simson</a>,
+    <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>
+    <br>
+    <em>MIDL</em>, 2024 &nbsp <font color="red"><strong>(Best Paper Award)</strong></font>
+    <br>
+    <a href="https://github.com/vasl12/SINR">code</a>
+    /
+    <a href="https://proceedings.mlr.press/v250/sideri-lampretsa24a.html">paper</a>
+    <p></p>
+    <p>
+      We introduce SINR, a method to parameterize the continuous deformable transformation represented by an INR using Free Form Deformations (FFD) enabling robust multi-modal registration while preventing spatial folding.
+    </p>
+  </td>
+</tr>
+
+
+<tr onmouseout="biobank_stop()" onmouseover="biobank_start()">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='biobank_image'>
+        <img src='images/atlas.png' width=100%>
+      </div>
+      <img src='images/atlas.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function biobank_start() {
+        document.getElementById('biobank_image').style.opacity = "1";
+      }
+
+      function biobank_stop() {
+        document.getElementById('biobank_image').style.opacity = "0";
+      }
+      biobank_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://www.nature.com/articles/s43856-024-00670-0">
+      <span class="papertitle">Using UK Biobank Data to Establish Population-Specific Atlases from Whole Body MRI</span>
+    </a>
+    <br>
+    <a href="#">Sophie Starck*</a>,
+    <strong>Vasiliki Sideri-Lampretsa*</strong>,
+    <a href="#">Jessica J. M. Ritter</a>,
+    <a href="https://kiinformatik.mri.tum.de/de/team/veronika_zimmer">Veronika A. Zimmer</a>,
+    <a href="#">Rickmer Braren</a>,
+    <a href="https://kiinformatik.mri.tum.de/de/team/tamara_mueller">Tamara T. Mueller</a>,
+    <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>
+    <br>
+    <em>Communications Medicine</em>, 2024
+    <br>
+    <a href="https://www.nature.com/articles/s43856-024-00670-0">paper</a>
+    <p></p>
+    <p>
+      We leverage large-scale UK Biobank whole-body MRI data to construct population-specific atlases, capturing demographic and biological variation across diverse subgroups.
+    </p>
+  </td>
+</tr>
+
+
+
 <!--
 <tr onmouseout="medfuncta_stop()" onmouseover="medfuncta_start()" bgcolor="#ffffd0">
   <td style="padding:16px;width:20%;vertical-align:middle">
@@ -267,46 +438,42 @@
 -->
 
 
-
-<tr onmouseout="sinr_stop()" onmouseover="sinr_start()" bgcolor="#ffffd0">
+<tr onmouseout="ultrasound_stop()" onmouseover="ultrasound_start()">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
-      <div class="two" id='sinr_image'>
-        <img src='images/sinr_before.png' width=100%>
+      <div class="two" id='ultrasound_image'>
+        <img src='images/ultrasound.png' width=100%>
       </div>
-      <img src='images/sinr_before.png' width=100%>
+      <img src='images/ultrasound.png' width=100%>
     </div>
     <script type="text/javascript">
-      function sinr_start() {
-        document.getElementById('sinr_image').style.opacity = "1";
+      function ultrasound_start() {
+        document.getElementById('ultrasound_image').style.opacity = "1";
       }
 
-      function sinr_stop() {
-        document.getElementById('sinr_image').style.opacity = "0";
+      function ultrasound_stop() {
+        document.getElementById('ultrasound_image').style.opacity = "0";
       }
-      sinr_stop()
+      ultrasound_stop()
     </script>
   </td>
   <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://proceedings.mlr.press/v250/sideri-lampretsa24a.html">
-      <span class="papertitle">SINR: Spline-enhanced implicit neural representation for multi-modal registration</span>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0041624X2300255X">
+      <span class="papertitle">Investigating Pulse-Echo Sound Speed Estimation in Breast Ultrasound with Deep Learning</span>
     </a>
     <br>
-    <strong>Vasiliki Sideri-Lampretsa</strong>,
-    <a href="https://jqmcginnis.github.io/">Julian McGinnis</a>,
-    <a href="https://kiinformatik.mri.tum.de/en/team/huaqi-harvey_qiu">Huaqi Qiu</a>,
+    <a href="https://waltersimson.com/">Walter A. Simson</a>,
     <a href="https://magdapaschali.com/">Magdalini Paschali</a>,
-    <a href="https://waltersimson.com/">Walter Simson</a>,
-    <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>
+    <strong>Vasiliki Sideri-Lampretsa</strong>,
+    <a href="#">Nassir Navab</a>,
+    <a href="https://med.stanford.edu/profiles/jeremy-dahl">Jeremy J. Dahl</a>
     <br>
-    <em>MIDL</em>, 2024 &nbsp <font color="red"><strong>(Best Paper Award)</strong></font>
+    <em>Ultrasonics</em>, 2024
     <br>
-    <a href="https://github.com/vasl12/SINR">code</a>
-    /
-    <a href="https://proceedings.mlr.press/v250/sideri-lampretsa24a.html">paper</a>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0041624X2300255X">paper</a>
     <p></p>
     <p>
-      We introduce SINR - a method to parameterize the continuous deformable transformation represented by an INR using Free Form Deformations (FFD) enabling robust multi-modal registration while preventing spatial folding.
+      We investigate deep learning approaches for pulse-echo sound speed estimation in breast ultrasound, exploring the potential of neural networks to improve quantitative acoustic imaging.
     </p>
   </td>
 </tr>
@@ -373,7 +540,7 @@
 -->
 
 <!--
-<tr onmouseout="multicontrast_stop()" onmouseover="multicontrast_start()" bgcolor="#ffffd0">
+<tr onmouseout="multicontrast_stop()" onmouseover="multicontrast_start()" bgcolor="#ffffff">
   <td style="padding:20px;width:20%;vertical-align:middle">
     <div class="one">
       <div class="two" id='multicontrast_image'>
@@ -397,10 +564,10 @@
       <span class="papertitle">Single-subject Multi-contrast MRI Super-resolution via Implicit Neural Representations</span>
     </a>
     <br>
-    <strong>Julian McGinnis*</strong>
+    <a href="https://jqmcginnis.github.io/">Julian McGinnis*</a>,
     <a href="https://www.dqbm.uzh.ch/en/research/menze/team/team-supro.html">Suprosanna Shit*</a>,
     <a href="https://hongweilibran.github.io/">Hongwei Bran Li</a>,
-    <a href="https://kiinformatik.mri.tum.de/en/team/vasiliki_sideri-lampretsa">Vasiliki Sideri-Lampretsa</a>,
+    <strong>Vasiliki Sideri-Lampretsa</strong>,
     <a href="https://kiinformatik.mri.tum.de/en/team/robert_graf">Robert Graf</a>,
     <a href="https://kiinformatik.mri.tum.de/en/team/maik_dannecker">Maik Dannecker</a>,
     <a href="https://jiazhenpan.me/">Jiazhen Pan</a>,
