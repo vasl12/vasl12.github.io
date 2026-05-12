@@ -33,8 +33,9 @@
                 <p style="text-align:center">
                   <a href="mailto:vasiliki.sideri-lampretsa@tum.de">Email</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=G1hpNYYAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/vasl12/">Github</a> &nbsp;/&nbsp;
                   <!-- <a href="https://twitter.com/vasiliki_sideri">Twitter</a> &nbsp;/&nbsp; -->
-                  <a href="https://github.com/vasl12/">Github</a>
+                  <a href="https://www.linkedin.com/in/vasiliki-sideri-lampretsa">LinkedIn</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
@@ -107,6 +108,47 @@
   </td>
 </tr>
 -->
+
+
+<tr onmouseout="cohort_stop()" onmouseover="cohort_start()" bgcolor="#ffffd0">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='cohort_image'>
+        <img src='images/xp_inr.png' width=100%>
+      </div>
+      <img src='images/xp_inr.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function cohort_start() {
+        document.getElementById('cohort_image').style.opacity = "1";
+      }
+
+      function cohort_stop() {
+        document.getElementById('cohort_image').style.opacity = "0";
+      }
+      cohort_stop()
+    </script>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2605.08298">
+      <span class="papertitle">What Cohort INRs Encode and Where to Freeze Them</span>
+    </a>
+    <br>
+    <strong>Vasiliki Sideri-Lampretsa</strong>,
+    <a href="#">Sophie Starck</a>,
+    <a href="#">Robbie Holland</a>,
+    <a href="https://jqmcginnis.github.io/">Julian McGinnis</a>,
+    <a href="https://www.professoren.tum.de/en/rueckert-daniel">Daniel Rueckert</a>
+    <br>
+    <em>Preprint</em>, 2026
+    <br>
+    <a href="https://arxiv.org/abs/2605.08298">arXiv</a>
+    <p></p>
+    <p>
+      We give the first mechanistic account of what transfers in cohort-trained INRs: the optimal freeze depth coincides with the layer of highest weight stable rank, and SAE decompositions reveal that SIREN learns localized, coordinate-tiling atoms while FFMLP learns image-spanning atoms that memorize cohort content.
+    </p>
+  </td>
+</tr>
 
 
 <tr onmouseout="sae_stop()" onmouseover="sae_start()">
