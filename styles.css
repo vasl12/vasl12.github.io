@@ -3817,12 +3817,18 @@ body.dark-mode .filter-btn.active {
 }
 
 /* Navigation links in dark mode */
+body.dark-mode .navbar,
+body.dark-mode .navbar.scrolled {
+    background: #000000 !important;
+    border-bottom-color: #262626 !important;
+}
+
 body.dark-mode .nav-link {
-    color: var(--text-color) !important;
+    color: #ffffff !important;
 }
 
 body.dark-mode .nav-logo h2 {
-    color: var(--accent-primary) !important;
+    color: #ffffff !important;
 }
 
 /* Coauthors section in dark mode */
