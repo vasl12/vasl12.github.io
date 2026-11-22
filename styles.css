@@ -1639,6 +1639,7 @@ section {
     touch-action: pan-x;
     scrollbar-width: none;
     border: 1px solid var(--border-color);
+    border-radius: 16px;
     background: var(--bg-color);
     min-height: 360px;
 }
@@ -1673,6 +1674,7 @@ section {
     position: relative;
     aspect-ratio: 3 / 4;
     border: 1px solid var(--border-color);
+    border-radius: 12px;
     background: #ffffff;
     overflow: hidden;
     display: flex;
