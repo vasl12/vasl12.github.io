@@ -123,7 +123,10 @@ body {
 
 /* Container */
 .container {
-    max-width: 1200px;
+    /* Grows with the viewport: 1200px min (keeps ~120px gutter at 1440),
+       expands as the screen gets wider while keeping ~120px gutter,
+       capped at 1800px on 2040px+ monitors. */
+    max-width: clamp(1200px, calc(100vw - 240px), 1800px);
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -5082,10 +5085,10 @@ body.dark-mode .hero-min {
     display: none !important;
 }
 .hero-min-container {
-    /* Narrow + centered so the hero gets the same framed look as the
-       research cards (which cap around ~1150px). On phones the max-width
-       is effectively ignored since the viewport is already smaller. */
-    max-width: 1200px;
+    /* Grows with the viewport: 1200px min (keeps ~120px gutter at 1440),
+       expands as the screen gets wider while keeping ~120px gutter,
+       capped at 1800px on 2040px+ monitors. */
+    max-width: clamp(1200px, calc(100vw - 240px), 1800px);
     margin: 0 auto;
     display: grid;
     grid-template-columns: 420px minmax(0, 1fr);
