@@ -11,10 +11,10 @@
 
     const CFG = {
         // Dot count scales linearly with hero area (width × height) and
-        // is clamped to [minDots, maxDots]. Widest monitors (~2560×900+)
-        // stay at the maxDots cap; narrower viewports progressively shrink
-        // the count (e.g. ~130 at 1440, ~80 at 1024, ~45 at 768).
-        areaPerDot: 10000,
+        // is clamped to [minDots, maxDots]. At 2560×900 that's ~160
+        // dots; 1440×900 gets ~90 (half the original 180); 1024×768
+        // gets ~55; small tablets drop toward the 20-dot floor.
+        areaPerDot: 14400,
         maxDots: 180,
         minDots: 20,
         minRadius: 3,
