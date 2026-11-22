@@ -123,7 +123,7 @@ body {
 
 /* Container */
 .container {
-    max-width: 2100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -5081,12 +5081,11 @@ body.dark-mode .hero-min {
     display: none !important;
 }
 .hero-min-container {
-    max-width: 1800px;
-    margin: 0;
-    /* Responsive side gutters: ~3cm on wide (2560px+) screens, shrinking
-       linearly as the viewport narrows, down to 0 on phones (<~670px). */
-    padding-left: clamp(0px, calc(6vw - 40px), 3cm);
-    padding-right: clamp(0px, calc(6vw - 40px), 3cm);
+    /* Narrow + centered so the hero gets the same framed look as the
+       research cards (which cap around ~1150px). On phones the max-width
+       is effectively ignored since the viewport is already smaller. */
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 420px minmax(0, 1fr);
     gap: 3.5rem;
