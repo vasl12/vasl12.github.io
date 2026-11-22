@@ -5083,6 +5083,9 @@ body.dark-mode .hero-min {
 .hero-min-container {
     max-width: 1800px;
     margin: 0;
+    /* Responsive left gutter: ~3cm on wide (2560px+) screens, shrinking
+       linearly as the viewport narrows, down to 0 on phones (<~670px). */
+    padding-left: clamp(0px, calc(6vw - 40px), 3cm);
     display: grid;
     grid-template-columns: 420px minmax(0, 1fr);
     gap: 3.5rem;
