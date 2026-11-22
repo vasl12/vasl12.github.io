@@ -20,19 +20,19 @@
     --accent-line: #C2185B;
 }
 
-/* Dark Mode Variables — warm dark complement */
+/* Dark Mode Variables — neutral near-black */
 body.dark-mode {
-    --bg-color: #1A1815;
-    --text-color: #EDE6D8;
-    --text-muted: #A89F94;
-    --text-subtle: #756B5F;
-    --nav-bg: rgba(26, 24, 21, 0.92);
-    --nav-bg-scrolled: rgba(26, 24, 21, 0.97);
-    --section-bg: #1A1815;
-    --card-bg: #1A1815;
-    --border-color: #2E2A24;
-    --border-soft: rgba(237, 230, 216, 0.06);
-    --shadow-color: rgba(0, 0, 0, 0.35);
+    --bg-color: #0d0d0d;
+    --text-color: #f0f0f0;
+    --text-muted: #a0a0a0;
+    --text-subtle: #6a6a6a;
+    --nav-bg: rgba(13, 13, 13, 0.92);
+    --nav-bg-scrolled: rgba(13, 13, 13, 0.97);
+    --section-bg: #0d0d0d;
+    --card-bg: #171717;
+    --border-color: #262626;
+    --border-soft: rgba(255, 255, 255, 0.06);
+    --shadow-color: rgba(0, 0, 0, 0.5);
 
     --accent-primary: #FFFFFF;
     --accent-secondary: #E91E63;
