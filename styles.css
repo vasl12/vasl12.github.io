@@ -1499,10 +1499,10 @@ section {
 /* Research Section */
 .research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 560px));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
     gap: 2rem;
     justify-content: center;
-    max-width: 1800px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
