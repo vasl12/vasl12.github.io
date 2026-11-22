@@ -50,9 +50,9 @@ body.dark-mode {
 html {
     scroll-behavior: smooth;
     /* Fluid base size — scales with viewport width so the same rems look
-       right on phones (~14px), a 1440px laptop (~16px) and 2560px desktop
-       (~18px). Bounded so very narrow or very wide screens still read. */
-    font-size: clamp(14px, 0.4vw + 11px, 18px);
+       right on phones (~13px), a 1440px laptop (~14.3px) and 2560px
+       desktop (~17px). Bounded so very narrow or very wide screens read. */
+    font-size: clamp(13px, 0.3vw + 10px, 17px);
 }
 
 body {
@@ -2721,16 +2721,16 @@ section {
         display: flex;
     }
 
-    /* Center dark mode button on mobile */
+    /* Keep dark-mode button on the right (next to the hamburger) on mobile
+       so it never covers the Vasiliki Sideri-Lampretsa banner on the left. */
     .nav-container {
         position: relative;
     }
 
     .nav-controls {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 10;
+        position: static;
+        margin-left: auto;
+        margin-right: 0.75rem;
     }
 
     .hamburger.active .bar:nth-child(2) {
