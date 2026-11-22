@@ -49,7 +49,10 @@ body.dark-mode {
 
 html {
     scroll-behavior: smooth;
-    font-size: 19px;
+    /* Fluid base size — scales with viewport width so the same rems look
+       right on phones (~14px), a 1440px laptop (~16px) and 2560px desktop
+       (~18px). Bounded so very narrow or very wide screens still read. */
+    font-size: clamp(14px, 0.4vw + 11px, 18px);
 }
 
 body {
