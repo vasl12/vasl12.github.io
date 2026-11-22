@@ -10,7 +10,11 @@
     const ctx = canvas.getContext('2d');
 
     const CFG = {
-        areaPerDot: 6500,
+        // Dot count scales linearly with hero area (width × height) and
+        // is clamped to [minDots, maxDots]. Widest monitors (~2560×900+)
+        // stay at the maxDots cap; narrower viewports progressively shrink
+        // the count (e.g. ~130 at 1440, ~80 at 1024, ~45 at 768).
+        areaPerDot: 10000,
         maxDots: 180,
         minDots: 20,
         minRadius: 3,
