@@ -1499,10 +1499,10 @@ section {
 /* Research Section */
 .research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 560px));
     gap: 2rem;
     justify-content: center;
-    max-width: 1400px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
@@ -2710,11 +2710,11 @@ section {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--bg-color);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.03);
+        box-shadow: 0 10px 27px var(--shadow-color);
         padding: 2rem 0;
     }
 
