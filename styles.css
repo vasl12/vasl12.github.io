@@ -49,11 +49,16 @@ body.dark-mode {
 
 html {
     scroll-behavior: smooth;
-    /* Fluid base size — scales with viewport width so the same rems look
-       right on phones (~13px), a 1440px laptop (~14.3px) and 2560px
-       desktop (~17px). Bounded so very narrow or very wide screens read. */
-    font-size: clamp(13px, 0.3vw + 10px, 17px);
+    font-size: 16px;
 }
+/* Resolution-based scaling: pick a base font-size per device class so each
+   screen reads at 100% browser zoom without relying on the user to change
+   it. Order matters — most-specific breakpoints last wins. */
+@media (max-width: 1500px) { html { font-size: 14px; } }
+@media (max-width: 900px)  { html { font-size: 14px; } }
+@media (max-width: 480px)  { html { font-size: 13px; } }
+@media (min-width: 1920px) { html { font-size: 16px; } }
+@media (min-width: 2400px) { html { font-size: 17px; } }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -2724,12 +2729,14 @@ section {
     /* Keep dark-mode button on the right (next to the hamburger) on mobile
        so it never covers the Vasiliki Sideri-Lampretsa banner on the left. */
     .nav-container {
-        position: relative;
+        position: relative !important;
     }
 
     .nav-controls {
-        position: static;
-        margin-left: auto;
+        position: static !important;
+        left: auto !important;
+        transform: none !important;
+        margin-left: auto !important;
         margin-right: 0.75rem;
     }
 
