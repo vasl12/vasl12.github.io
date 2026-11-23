@@ -2484,8 +2484,8 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--text-color);
-    color: var(--border-color);
+    background: #ffffff;
+    color: #000000;
     padding: 2rem 0;
     text-align: center;
 }
