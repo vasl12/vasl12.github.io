@@ -442,10 +442,17 @@ class ScholarIntegration {
             </a>`);
         }
 
+        const titleHref = (pub.link && pub.link !== '#')
+            ? pub.link
+            : (pub.semanticScholarUrl && pub.semanticScholarUrl !== '#' ? pub.semanticScholarUrl : '');
+        const titleText = this.escapeHtml(pub.title || 'Untitled');
+        const titleInner = titleHref
+            ? `<a href="${this.escapeAttr(titleHref)}" target="_blank" rel="noopener">${titleText}</a>`
+            : titleText;
         slide.innerHTML = `
             <div class="publication-slide-content">
                 <p class="publication-slide-meta">${this.escapeHtml(venueLine)}</p>
-                <h3 class="publication-slide-title">${this.escapeHtml(pub.title || 'Untitled')}</h3>
+                <h3 class="publication-slide-title">${titleInner}</h3>
                 <p class="publication-slide-authors">${this.highlightAuthorName(pub.authors || '')}</p>
                 <div class="publication-slide-footer">
                     <span class="publication-slide-citations">
