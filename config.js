@@ -60,7 +60,7 @@ window.SITE_CONFIG = {
         },
         {
             name: 'DiffDef',
-            title: 'Dif-Def: Diffusion-Generated Deformation Fields for Conditional Atlases',
+            title: 'Diff-Def: Diffusion-Generated Deformation Fields for Conditional Atlases',
             description: 'IEEE TMI 2025. Latent diffusion models used to synthesize spatial transformations that deform existing anatomy, creating conditional atlases while avoiding hallucinations in the intensity domain.',
             siteUrl: 'https://github.com/starcksophie/DiffDef',
             repoUrl: 'https://github.com/starcksophie/DiffDef',

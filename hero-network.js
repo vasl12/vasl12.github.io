@@ -11,15 +11,15 @@
 
     const CFG = {
         // Dot count scales linearly with hero area (width × height) and
-        // is clamped to [minDots, maxDots]. At 2560×900 that's ~160
-        // dots; 1440×900 gets ~90 (half the original 180); 1024×768
-        // gets ~55; small tablets drop toward the 20-dot floor.
-        areaPerDot: 14400,
-        maxDots: 180,
-        minDots: 20,
+        // is clamped to [minDots, maxDots]. At 2560×900 that's ~116
+        // dots; 1440×900 gets ~65; 1024×768 gets ~40; small tablets
+        // drop toward the 14-dot floor.
+        areaPerDot: 19800,
+        maxDots: 131,
+        minDots: 14,
         minRadius: 3,
         maxRadius: 6.6,
-        speed: 0.7,
+        speed: 0.4,
         dotOpacity: 0.55,
         linkDist: 280,
         linkOpacity: 0.22,
@@ -131,18 +131,26 @@
         }
 
         if (mouse.active) {
-            for (let i = 0; i < dots.length; i++) {
-                const d = dots[i];
-                const dx = d.x - mouse.x;
-                const dy = d.y - mouse.y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-                if (dist < CFG.mouseDist) {
-                    const op = CFG.mouseOpacity * (1 - dist / CFG.mouseDist);
-                    ctx.strokeStyle = 'rgba(' + c.coral + ',' + op + ')';
-                    ctx.beginPath();
-                    ctx.moveTo(mouse.x, mouse.y);
-                    ctx.lineTo(d.x, d.y);
-                    ctx.stroke();
+            const since = performance.now() - lastMoveTime;
+            const fade = since <= IDLE_HOLD_MS
+                ? 1
+                : Math.max(0, 1 - (since - IDLE_HOLD_MS) / FADE_MS);
+            if (fade <= 0) {
+                mouse.active = false;
+            } else {
+                for (let i = 0; i < dots.length; i++) {
+                    const d = dots[i];
+                    const dx = d.x - mouse.x;
+                    const dy = d.y - mouse.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < CFG.mouseDist) {
+                        const op = CFG.mouseOpacity * fade * (1 - dist / CFG.mouseDist);
+                        ctx.strokeStyle = 'rgba(' + c.coral + ',' + op + ')';
+                        ctx.beginPath();
+                        ctx.moveTo(mouse.x, mouse.y);
+                        ctx.lineTo(d.x, d.y);
+                        ctx.stroke();
+                    }
                 }
             }
         }
@@ -167,11 +175,15 @@
         rafId = null;
     }
 
+    const IDLE_HOLD_MS = 0;
+    const FADE_MS = 1000;
+    let lastMoveTime = 0;
     section.addEventListener('mousemove', (e) => {
         const rect = section.getBoundingClientRect();
         mouse.x = e.clientX - rect.left;
         mouse.y = e.clientY - rect.top;
         mouse.active = true;
+        lastMoveTime = performance.now();
         if (reduceMotion) draw();
     });
     section.addEventListener('mouseleave', () => {
