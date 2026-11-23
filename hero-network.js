@@ -11,12 +11,12 @@
 
     const CFG = {
         // Dot count scales linearly with hero area (width × height) and
-        // is clamped to [minDots, maxDots]. At 2560×900 that's ~116
-        // dots; 1440×900 gets ~65; 1024×768 gets ~40; small tablets
-        // drop toward the 14-dot floor.
-        areaPerDot: 19800,
-        maxDots: 131,
-        minDots: 14,
+        // is clamped to [minDots, maxDots]. At 2560×900 that's ~105
+        // dots; 1440×900 gets ~59; 1024×768 gets ~36; small tablets
+        // drop toward the 13-dot floor.
+        areaPerDot: 22000,
+        maxDots: 118,
+        minDots: 13,
         minRadius: 3,
         maxRadius: 6.6,
         speed: 0.4,
